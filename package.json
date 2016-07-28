@@ -5,7 +5,7 @@
   "scripts": {
     "scripts:build": "rollup -c rollup.config.js -o ./dest/bundle.js",
     "test": "xo",
-    "watch": "watch 'npm-run-all scripts test' src"
+    "watch": "watch 'npm-run-all scripts:builds test' src"
   },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
