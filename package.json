@@ -1,0 +1,29 @@
+{
+  "name": "rollup-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scripts:build": "rollup -c rollup.config.js -o ./dest/bundle.js",
+    "test": "xo",
+    "watch": "watch 'npm-run-all scripts test' src"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "npm-run-all": "^2.3.0",
+    "rollup": "^0.34.1",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-commonjs": "^3.3.1",
+    "rollup-plugin-node-resolve": "^1.7.1",
+    "rollup-plugin-uglify": "^1.0.1",
+    "watch": "^0.19.1",
+    "xo": "^0.16.0"
+  },
+  "dependencies": {
+    "axios": "^0.13.1",
+    "localforage": "^1.4.2"
+  },
+  "xo": {
+    "space": 2,
+    "env": "browser"
+  }
+}
