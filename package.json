@@ -1,7 +1,7 @@
 {
   "name": "rollup-sample",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/global.js",
   "scripts": {
     "scripts:build": "rollup -c rollup.config.js -o ./dest/bundle.js",
     "test": "xo",
@@ -21,6 +21,9 @@
   "dependencies": {
     "axios": "^0.13.1",
     "localforage": "^1.4.2"
+  },
+  "babel": {
+    "presets": ["es2015-rollup"]
   },
   "xo": {
     "space": 2,
